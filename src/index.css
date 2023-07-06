@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer base {
+  html {
+    overflow: hidden;
+  }
+  * {
+    cursor: none;
+  }
+  body {
+    @apply bg-base text-primary relative overflow-hidden;
+    font-family: "Georama", sans-serif;
+  }
+  .socials {
+    @apply h-10 w-10 bg-ascent p-2 rounded-md;
+  }
+  .nav-item {
+    @apply block text-xl;
+  }
+  .nav-item {
+    opacity: 1;
+  }
+  .nav-item:not(.nav-item:hover) {
+    opacity: 0.2;
+  }
+  .activeN {
+    scale: 1.2 !important;
+    opacity: 1 !important;
+  }
+  .nav-dock {
+    @apply h-4 w-1 bg-ascent rounded-md transition-all duration-1000;
+  }
+  .dock-active {
+    @apply w-4;
+  }
+  .cursorZ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+  }
+
+  .outerZ {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #d4eaff;
+    transition: all 0.08s ease-out;
+  }
+
+  .innerZ {
+    width: 7px;
+    height: 7px;
+    background: #5a95cc;
+  }
+  .nav-text {
+    pointer-events: none;
+    opacity: 0.02;
+    position: absolute;
+    font-size: 20rem;
+    font-weight: bolder;
+    z-index: -100;
+  }
+  .nav-text-mob {
+    pointer-events: none;
+    opacity: 0.02;
+    position: absolute;
+    font-size: 8rem;
+    font-weight: bolder;
+    z-index: -100;
+    transform: rotate(45deg);
+  }
+  .decor {
+    position: absolute;
+    top: 10rem;
+    opacity: 0.5;
+    left: 20rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    z-index: -100;
+  }
+}
