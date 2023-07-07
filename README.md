@@ -1,4 +1,4 @@
-# Portfolio ver-2 (Animesh Kumar)
+# Portfolio ver-2 (Samarth devli)
 
 It is a simple minimalistic portfolio website made by me to showcase some of my best works and for people to find me on the internet. The portfolio contains every detail one might need in order to get in touch officially.
 
